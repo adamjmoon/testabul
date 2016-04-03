@@ -40,4 +40,7 @@ var rmdirAsync = function(path, callback) {
     });
 };
 
-rmdirAsync("dist");
+rmdirAsync("dist", function(err,result){
+    "use strict";
+    console.log("deleted dist");
+});
