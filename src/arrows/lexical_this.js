@@ -1,7 +1,7 @@
+// Lexical this
+export default {
 
-export default function(){
-
-    this.bobObjOld = {
+    bobObjOld : {
         _name: "Bob",
         _friends: ["Bill"],
         printFriends() {
@@ -11,10 +11,9 @@ export default function(){
             });
             return knows.trim();
         }
-    };
+    },
 
-// Lexical this
-    this.bobObjNew = {
+    bobObjNew : {
         _name: "Bob",
         _friends: ["Bill"],
         printFriends() {
@@ -24,9 +23,9 @@ export default function(){
             );
             return knows.trim();
         }
-    };
+    },
 
-    this.BobFuncOld = function () {
+    BobFuncOld : function () {
         this._name = "Bob";
         this._friends = ["Bill"];
         this.printFriends = function () {
@@ -36,9 +35,9 @@ export default function(){
             });
             return knows.trim();
         };
-    };
+    },
 
-    this.BobFuncNew = () => {
+    BobFuncNew : function () {
         this._name = "Bob";
         this._friends = ["Bill"];
         this.printFriends = function () {
@@ -48,5 +47,5 @@ export default function(){
             );
             return knows.trim();
         };
-    };
+    }
 };
