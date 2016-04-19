@@ -15,7 +15,7 @@ export default function () {
 		}, randomDelay);
 	}
 // **************************************
-// The map/reduce/promise way
+// The rx/observable/promise way
 	function getFile(file) {
 		return new Promise(function(resolve){
 			fakeAjax(file,resolve);
@@ -27,7 +27,7 @@ export default function () {
 			Rx.Observable.fromArray(input)
 		   .concatMap(file => Rx.Observable.fromPromise(getFile(file)))
 		   .subscribe(
-	    	(fileResult) => {_output = [..._output,fileResult] },
+	    	(fileResult) => _output = [..._output,fileResult],
 			(error) => {throw error;},
 			() => {	_output = [..._output,"Complete!"];	observer.onNext(_output);}
 		   );
