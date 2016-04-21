@@ -2,4 +2,8 @@
 # testabul
 Javascript ES2015, ES2016 Fundamentals Unit Test Sandbox with AVA and Mocha Test Framework Tests
 
+###### SETUP
+   * git clone https://github.com/adamjmoon/testabul.git
+   * npm install
+   
 
