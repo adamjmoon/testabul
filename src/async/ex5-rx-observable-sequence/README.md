@@ -1,6 +1,6 @@
 # Instructions
 
-1. You'll do the same thing as the previous exercise(s), but now you should use asynquence.
+1. You'll do the same thing as the previous exercise(s), but now use Rx observable sequence with fakeAjax-promise
 
 2. Expected behavior:
 	- Request all 3 files at the same time (in "parallel").

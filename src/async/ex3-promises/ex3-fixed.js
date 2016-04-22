@@ -1,23 +1,9 @@
-export default function () {
-	function fakeAjax(url, cb) {
-		var fake_responses = {
-			"file1": "The first text",
-			"file2": "The second text",
-			"file3": "The third text"
-		};
-		var randomDelay = (Math.round(Math.random() * 1E4) % 8000) + 1000;
+import fakeAjax from "../fakeAjax-promise";
 
-		setTimeout(function () {
-			cb(fake_responses[url]);
-		}, randomDelay);
-	}
-// **************************************
-// The promise way
-	function getFile(file) {
-		return new Promise(function(resolve){
-			fakeAjax(file,resolve);
-		});
-	}
+export default function () {
+	// **************************************
+	// The promise way
+	let getFile = (file) => fakeAjax(file);
 
 	this.start = () => {
 		"use strict";

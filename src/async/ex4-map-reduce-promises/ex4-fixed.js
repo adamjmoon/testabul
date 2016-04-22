@@ -1,4 +1,4 @@
-import fakeAjax from "../fakeAjax-promise"
+import fakeAjax from "../fakeAjax-promise";
 
 export default function () {
 	"use strict";
