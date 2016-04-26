@@ -1,0 +1,88 @@
+//output:index.html
+html
+  head
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700', type='text/css')
+    link(rel='stylesheet prefetch', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+    link(rel='stylesheet prefetch', href='https://code.getmdl.io/1.1.3/material.light_blue-indigo.min.css')
+    link(rel='stylesheet prefetch', href='https://cdn.rawgit.com/nwinkler/reveal-highlight-themes/master/styles/github.css')
+    link(rel='stylesheet prefetch', href='/pres.css')
+    script(type="text/javascript",src="https://code.getmdl.io/1.1.3/material.min.js")
+    script(type="text/javascript",src="https://npmcdn.com/reveal.js@3.2.0")
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      header.mdl-layout__header
+        .mdl-layout__header-row
+          // Title
+          span.mdl-layout-title Asynchronous Javascript => GET OUT OF CALLBACK HELL
+          // Add spacer, to align navigation to the right
+          .mdl-layout-spacer
+          // Navigation. We hide it in small screens.
+          nav.mdl-navigation.mdl-layout--large-screen-only
+      .mdl-layout__drawer
+        span.mdl-layout-title  
+        nav.mdl-navigation
+          a.mdl-navigation__link(href='#jsLunchNLearnSeries') JS Lunch N Learn Series
+          a.mdl-navigation__link(href='#codeSetupInstructions') Code Exercise Setup
+          a.mdl-navigation__link(href='#prototypeChain') 
+          a.mdl-navigation__link(href='#prototypeChain') Callback Hell
+          a.mdl-navigation__link(href='#closureScoping') Solving with Thunks
+          a.mdl-navigation__link(href='#prototypeCodeEx') Solving with Promises
+          a.mdl-navigation__link(href='#prototypeCodeEx') Solving with Map & Reduce & Promise
+          a.mdl-navigation__link(href='#prototypeCodeEx') Solving with Rx Observable 
+          a.mdl-navigation__link(href='#prototypeCodeEx') Solving with Rx Observable 
+    .reveal
+      .slides
+        section#jsLunchNLearnSeries
+          .flex-container__center
+            .mdl-card.mdl-shadow--2dp
+              .mdl-card-header
+                h2 Javascript Lunch-N-Learn Series
+              .flex-container.row
+                ul.mdl-list
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content  Basics and New ES 2015 and ES2016 features
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content
+                      b Asynchroush Programming: How to get out of Callback Hell?
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content  Functional Programming in Javascript. Redux
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content  Angular 2.0 Deep Dive
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content  React-Native Deep Dive
+        section#codeSetupInstructions
+          .flex-container__center
+            .mdl-card.mdl-shadow--2dp
+              .mdl-card-header
+                h2 Code Exercise Setup Instructions
+              .flex-container.row
+                ul.mdl-list
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content
+                      | Install Node.js
+
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content
+        section#jsConcurrentEventLoop
+          .flex-container__center
+            .mdl-card.mdl-shadow--2dp
+              .mdl-card-header
+                h2 Javascript Concurrent Event Loop
+              .flex-container.row
+                ul.mdl-list
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content
+                  li.mdl-list__item.flex-container.justify-space-around
+                    i.material-icons chevron_right
+                    span.mdl-list__item-primary-content
+        section#Rx
+          .flex-container__center
+      script() Reveal.initialize();
