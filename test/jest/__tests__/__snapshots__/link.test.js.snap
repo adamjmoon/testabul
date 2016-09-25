@@ -1,0 +1,8 @@
+exports[`test renders correctly 1`] = `
+<a
+  onClick={[Function bound handleClick]}
+  page="http://www.facebook.com"
+  style={Object {}}>
+  Facebook
+</a>
+`;

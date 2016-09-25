@@ -6,13 +6,10 @@ test.cb("Output array should have files in correct order", t => {
     let ctx = new Context();
     let th = ctx.start();
     th((output) =>{
-        t.same(output[0],"The first text");
-        t.same(output[1],"The second text");
-        t.same(output[2],"The third text");
-        t.same(output[3],"Complete!");
+        t.deepEqual(output[0],"The first text");
+        t.deepEqual(output[1],"The second text");
+        t.deepEqual(output[2],"The third text");
+        t.deepEqual(output[3],"Complete!");
         t.end();
     });
 });
-
-
-

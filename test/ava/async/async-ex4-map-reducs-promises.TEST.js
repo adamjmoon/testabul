@@ -7,11 +7,11 @@ test("Output array should have files in correct order", t => {
     return Promise.resolve(
         ctx.start([],["file1","file2","file3","file4"])
         .then((output) => {
-            t.same(output[0], "The first text");
-            t.same(output[1], "The second text");
-            t.same(output[2], "The third text");
-            t.same(output[3], "The fourth text");
-            t.same(output[4], "Complete!");
+            t.deepEqual(output[0], "The first text");
+            t.deepEqual(output[1], "The second text");
+            t.deepEqual(output[2], "The third text");
+            t.deepEqual(output[3], "The fourth text");
+            t.deepEqual(output[4], "Complete!");
         })
     );
 });

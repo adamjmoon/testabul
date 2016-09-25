@@ -10,6 +10,6 @@ test("Demonstrate arrow functions in Statement bodies",t => {
             fives.push(v);
     });
 
-    t.same(fives,[5,10,15]);
+    t.deepEqual(fives,[5,10,15]);
 
 });
